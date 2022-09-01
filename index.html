@@ -19,23 +19,40 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 20px;
         font-family: Arial;
         color: white;
       }
 
-      body div.wrapper {
+      .wrapper {
         background: #131313;
         box-shadow: 0 6px 13px 3px rgba(0, 0, 0, 0.3);
+      }
+
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .background-image {
+        min-width: 100vw;
+        min-height: 100vh;
+        aspect-ratio: 1;
+        position: absolute;
+        top: 0;
       }
     </style>
   </head>
   <body class="peaxftw">
-    <img data-tenant-branding-background="true" />
-    <img data-tenant-branding-logo="true" alt="Company Logo" />
+    <img class="backgorund-image" data-tenant-branding-background="true" />
 
-    <div class="wrapper">
-      <div id="api"></div>
+    <div class="center">
+      <img data-tenant-branding-logo="true" alt="Company Logo" />
+      <div class="wrapper">
+        <div id="api"></div>
+      </div>
     </div>
   </body>
 </html>
