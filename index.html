@@ -19,15 +19,23 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 20px;
+        font-family: Arial;
+        color: white;
       }
 
-      body div {
+      body div.wrapper {
         background: #131313;
         box-shadow: 0 6px 13px 3px rgba(0, 0, 0, 0.3);
       }
     </style>
   </head>
   <body class="peaxftw">
-    <div id="api"></div>
+    <img data-tenant-branding-background="true" />
+    <img data-tenant-branding-logo="true" alt="Company Logo" />
+
+    <div class="wrapper">
+      <div id="api"></div>
+    </div>
   </body>
 </html>
